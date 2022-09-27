@@ -25,7 +25,7 @@
       <ul
         class="look-down absolute bottom-[30%] text-white left-1/2 text-[40px] ml-[-20px] lg:text-[80px] lg:ml-[-40px]"
       >
-        <a href="">
+        <a href="#display-cards">
           <li>
             <span class="iconfont absolute top-0">&#xe626;</span>
           </li>
