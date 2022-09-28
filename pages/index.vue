@@ -81,16 +81,6 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-import Banner from '~/components/Banner.vue'
-
-export default Vue.extend({
-  name: 'IndexPage',
-  components: { Banner },
-})
-</script>
-
 <style scoped>
 .product-card {
   background: url(@/assets/images/product-card-bg.jpg) no-repeat center center /
