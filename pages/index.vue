@@ -79,17 +79,26 @@
         <ProductInfo class="sticky top-0 product-info" btn-show="false" />
       </div>
     </section>
-    <div class="bg-green-400 h-screen">{{ y }}</div>
+    <div class="bg-green-400 h-screen"></div>
     <div class="bg-blue-400 h-screen"></div>
     <div class="bg-red-400 h-screen"></div>
   </div>
 </template>
 
-<script lang="ts" setup>
-import { useWindowScroll } from '@vueuse/core'
-const { y } = useWindowScroll()
+<script lang="ts">
+export default {
+  data() {
+    return {
+      title: '首页',
+    }
+  },
+  head() {
+    return {
+      title: this.title,
+    }
+  },
+}
 </script>
-
 <style scoped>
 .product-card {
   background: url(@/assets/images/product-card-bg.jpg) no-repeat center center /
