@@ -5,7 +5,7 @@
 <template>
   <nuxt-link
     :to="link"
-    class="block h-[40px] w-[140px] rounded-full text-center text-[14px] leading-[40px] transition-all transform hover:scale-105 hover:bg-gray-600 hover:text-gray-100"
+    class="block lg:h-[40px] h-[30px] w-[120px] lg:w-[140px] rounded-full text-center text-[12px] lg:text-[14px] leading-[30px] lg:leading-[40px] transition-all transform hover:scale-105 hover:bg-gray-600 hover:text-gray-100"
     :class="bgClass"
   >
     查看更多

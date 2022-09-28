@@ -35,9 +35,47 @@
         </div>
       </div>
     </section>
-    <div class="bg-green-400 h-screen">
-      <MoreBtn bg-class="bg-black text-white" />
-    </div>
+    <section id="display-products" class="w-screen">
+      <h2
+        class="pt-[80px] mb-[20px] lg:mb-[80px] lg:pt-[120px] text-center w-full text-white text-[24px] font-bold"
+      >
+        产品信息
+      </h2>
+      <div id="product-display-zoom">
+        <ProductInfo class="sticky top-0 product-info" link="product">
+          <template slot="subtitle">系列名称</template>
+          <template slot="title">名称名称名称名称</template>
+          <template slot="description">
+            描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
+          </template>
+          <template slot="product-img">
+            <nuxt-img src="product-img.png" sizes="sm:390 xxl:506" />
+          </template>
+        </ProductInfo>
+        <ProductInfo class="sticky top-0 product-info" link="product">
+          <template slot="subtitle">系列名称</template>
+          <template slot="title">名称名称名称名称</template>
+          <template slot="description">
+            描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
+          </template>
+          <template slot="product-img">
+            <nuxt-img src="product-img.png" sizes="sm:390 xxl:506" />
+          </template>
+        </ProductInfo>
+        <ProductInfo class="sticky top-0 product-info" link="product">
+          <template slot="subtitle">系列名称</template>
+          <template slot="title">名称名称名称名称</template>
+          <template slot="description">
+            描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
+          </template>
+          <template slot="product-img">
+            <nuxt-img src="product-img.png" sizes="sm:390 xxl:506" />
+          </template>
+        </ProductInfo>
+        <ProductInfo class="sticky top-0 product-info" btn-show="false" />
+      </div>
+    </section>
+    <div class="bg-green-400 h-screen"></div>
     <div class="bg-blue-400 h-screen"></div>
     <div class="bg-red-400 h-screen"></div>
   </div>
