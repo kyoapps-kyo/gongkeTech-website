@@ -35,7 +35,15 @@
   line-height: 58px;
   margin-left: 32px;
   text-align: right;
+  transition: all 1s linear 0s;
+  border-bottom: none;
 }
+
+.pc-menu > li:hover {
+  border-bottom: 1px solid rgb(165, 201, 255);
+  color: rgb(165, 201, 255);
+}
+
 .pc-menu > li:first-child {
   margin-left: 0px;
 }
@@ -46,5 +54,16 @@
 
 .mobile-menu > li:last-child {
   border-bottom: none;
+}
+ul > li > a {
+  text-align: center;
+}
+
+a.nuxt-link-active {
+  font-weight: bold;
+}
+
+a.nuxt-link-exact-active {
+  color: #00c58e;
 }
 </style>
