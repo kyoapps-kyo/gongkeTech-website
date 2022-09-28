@@ -87,14 +87,9 @@
 
 <script lang="ts">
 export default {
-  data() {
-    return {
-      title: '首页',
-    }
-  },
   head() {
     return {
-      title: this.title,
+      title: '首页',
     }
   },
 }
