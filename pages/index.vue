@@ -4,7 +4,7 @@
     <section id="display-cards" class="display-cards w-screen">
       <div class="container mx-auto lg:grid lg:grid-cols-2">
         <div
-          class="product-card col-span-2 h-[490px] w-full box-border px-[16px] pt-[80px] pb-[40px] lg:px-[138px] lg:pt-[101px] lg:pb-[70px] flex flex-col justify-start tracking-wide"
+          class="product-card col-span-2 h-[490px] w-full box-border px-[16px] pt-[120px] pb-[40px] lg:px-[138px] lg:pt-[101px] lg:pb-[70px] flex flex-col justify-start tracking-wide"
         >
           <h2 class="text-[36px] lg:text-[56px] font-bold mb-2 lg:mb-6">
             产品名称
@@ -42,14 +42,18 @@
         产品信息
       </h2>
       <div id="product-display-zoom">
-        <ProductInfo class="sticky top-0 product-info" link="product">
+        <ProductInfo
+          class="sticky top-0 product-info"
+          link="product"
+          :no-bg-color="false"
+        >
           <template slot="subtitle">系列名称</template>
           <template slot="title">名称名称名称名称</template>
           <template slot="description">
             描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
           </template>
           <template slot="product-img">
-            <nuxt-img src="product-img.png" sizes="sm:390 xxl:506" />
+            <nuxt-img src="product-img1.png" sizes="sm:390 xxl:506" />
           </template>
         </ProductInfo>
         <ProductInfo class="sticky top-0 product-info" link="product">
@@ -59,7 +63,7 @@
             描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
           </template>
           <template slot="product-img">
-            <nuxt-img src="product-img.png" sizes="sm:390 xxl:506" />
+            <nuxt-img src="product-img2.png" sizes="sm:390 xxl:506" />
           </template>
         </ProductInfo>
         <ProductInfo class="sticky top-0 product-info" link="product">
@@ -69,17 +73,22 @@
             描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
           </template>
           <template slot="product-img">
-            <nuxt-img src="product-img.png" sizes="sm:390 xxl:506" />
+            <nuxt-img src="product-img3.png" sizes="sm:390 xxl:506" />
           </template>
         </ProductInfo>
         <ProductInfo class="sticky top-0 product-info" btn-show="false" />
       </div>
     </section>
-    <div class="bg-green-400 h-screen"></div>
+    <div class="bg-green-400 h-screen">{{ y }}</div>
     <div class="bg-blue-400 h-screen"></div>
     <div class="bg-red-400 h-screen"></div>
   </div>
 </template>
+
+<script lang="ts" setup>
+import { useWindowScroll } from '@vueuse/core'
+const { y } = useWindowScroll()
+</script>
 
 <style scoped>
 .product-card {
