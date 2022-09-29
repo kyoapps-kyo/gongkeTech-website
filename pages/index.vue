@@ -1,6 +1,6 @@
 <template>
   <div class="index-page-content">
-    <Banner />
+    <IndexPageBanner />
     <section id="display-cards" class="display-cards w-screen">
       <div class="container mx-auto lg:grid lg:grid-cols-2">
         <div

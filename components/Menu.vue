@@ -1,7 +1,7 @@
 <template>
   <ul>
     <li>
-      <nuxt-link to="#" class="w-full h-full block">公司愿景</nuxt-link>
+      <nuxt-link to="vision" class="w-full h-full block">公司愿景</nuxt-link>
     </li>
     <li>
       <nuxt-link to="#" class="w-full h-full block">产品信息</nuxt-link>
@@ -26,7 +26,7 @@
 .pc-menu {
   overflow: hidden;
   width: 830px;
-  color: white;
+  color: rgb(192, 192, 192);
 }
 .pc-menu > li {
   float: left;
@@ -48,6 +48,10 @@
   margin-left: 0px;
 }
 
+.mobile-menu {
+  color: rgb(192, 192, 192);
+}
+
 .mobile-menu > li {
   border-bottom: solid 2px rgb(211, 211, 211);
 }
@@ -64,6 +68,6 @@ a.nuxt-link-active {
 }
 
 a.nuxt-link-exact-active {
-  color: #00c58e;
+  color: #ffffff;
 }
 </style>

@@ -27,21 +27,9 @@
         <br />
         <span class="text-[16px] lg:text-[22px]">观看完整介绍</span>
       </a>
-      <ul
-        class="look-down absolute bottom-[30%] text-white left-1/2 text-[40px] ml-[-20px] lg:text-[80px] lg:ml-[-40px]"
-      >
-        <a href="#display-cards">
-          <li>
-            <span class="iconfont absolute top-0">&#xe626;</span>
-          </li>
-          <li>
-            <span class="iconfont absolute top-4">&#xe626;</span>
-          </li>
-          <li>
-            <span class="iconfont absolute top-8">&#xe626;</span>
-          </li>
-        </a>
-      </ul>
+      <LookDownIcon
+        class="absolute bottom-[30%] text-white left-1/2 text-[40px] ml-[-20px] lg:text-[80px] lg:ml-[-40px]"
+      />
     </div>
   </section>
 </template>
@@ -79,44 +67,5 @@ const cardTransform = computed(() => {
   background-blend-mode: hard-light;
   filter: saturate(30%);
   background-attachment: fixed;
-}
-.look-down li span.iconfont {
-  scale: 0.2;
-  opacity: 0;
-  translate: 0px 0px;
-  animation-name: look-down;
-  animation-timing-function: leaner;
-  animation-iteration-count: infinite;
-}
-.look-down li:nth-of-type(1) span.iconfont {
-  animation-delay: 400ms;
-  animation-duration: 2000ms;
-}
-.look-down li:nth-of-type(2) span.iconfont {
-  animation-delay: 200ms;
-  animation-duration: 2000ms;
-}
-.look-down li:nth-of-type(3) span.iconfont {
-  animation-duration: 2000ms;
-}
-
-@keyframes look-down {
-  0% {
-    scale: 0.2;
-    opacity: 0;
-    translate: 0px 0px;
-  }
-
-  80% {
-    scale: 1.2;
-    opacity: 1;
-    translate: 0px 80px;
-  }
-
-  100% {
-    scale: 0.2;
-    opacity: 0;
-    translate: 0px 100px;
-  }
 }
 </style>
