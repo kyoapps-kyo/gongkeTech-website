@@ -79,6 +79,9 @@
         <ProductInfo class="sticky top-0 product-info" btn-show="false" />
       </div>
     </section>
+    <section id="news">
+      <NewsLists />
+    </section>
     <div class="bg-green-400 h-screen"></div>
     <div class="bg-blue-400 h-screen"></div>
     <div class="bg-red-400 h-screen"></div>
