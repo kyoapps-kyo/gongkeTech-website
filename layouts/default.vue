@@ -5,6 +5,7 @@
     <main>
       <nuxt />
     </main>
-    <footer></footer>
+    <div class="header-height h-[300px] lg:h-[326px] w-full"></div>
+    <Footer />
   </div>
 </template>
