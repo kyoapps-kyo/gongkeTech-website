@@ -76,7 +76,9 @@
             <nuxt-img src="product-img3.png" sizes="sm:390 xxl:506" />
           </template>
         </ProductInfo>
-        <ProductInfo class="sticky top-0 product-info" btn-show="false" />
+        <div
+          class="sticky top-0 product-info h-[300px] lg:h-[500px] w-full"
+        ></div>
       </div>
     </section>
     <section id="news">
