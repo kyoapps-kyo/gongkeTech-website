@@ -3,7 +3,7 @@
     <div class="container mx-auto relative h-screen">
       <div
         ref="target"
-        class="banner-con flex flex-col items-start h-full w-full lg:h-[270px] lg:w-[1200px] pt-24 px-8 lg:py-0 lg:px-0 lg:absolute lg:top-1/3 lg:left-1/2 lg:ml-[-600px] lg:mt-[-150px] text-white"
+        class="banner-con flex flex-col items-start h-full w-full lg:h-min lg:w-[1100px] pt-32 px-8 lg:py-40 lg:px-[50px] lg:absolute lg:top-[10%] lg:left-1/2 lg:ml-[-550px] text-white"
         :style="{
           transform: cardTransform,
           transition: 'transform 0.25s ease-out',
