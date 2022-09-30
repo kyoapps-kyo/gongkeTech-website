@@ -9,14 +9,16 @@
           transition: 'transform 0.25s ease-out',
         }"
       >
-        <h4 class="text-[12px] mb-[90px] lg:mb-[72px]">公司愿景</h4>
+        <h4 class="text-[12px] lg:text-[18px] font-bold mb-[90px] lg:mb-[72px]">
+          <slot name="subtitle"></slot>
+        </h4>
         <h3
           class="banner-description text-[28px] lg:text-[54px] font-bold text-center w-full mb-[52px] lg:mb-[72px]"
         >
-          Lorem Ipsum从西元15世
+          <slot name="title"></slot>
         </h3>
         <p class="text-[16px] lg:text-[24px] text-center w-full">
-          Lorem Ipsum，也称乱数假文或者哑元文本
+          <slot name="description"></slot>
         </p>
       </div>
       <LookDownIcon
