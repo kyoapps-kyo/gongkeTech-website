@@ -1,5 +1,5 @@
 <template>
   <nuxt-link to="/" class="my-20">
-    <nuxt-picture src="logo-slogan-w.png" width="150px"></nuxt-picture>
+    <img src="@/assets/images/logo-slogan-w.png" width="150" alt="" />
   </nuxt-link>
 </template>
