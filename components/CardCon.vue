@@ -7,13 +7,13 @@
       transition: 'transform 0.25s ease-out',
     }"
   >
-    <h3 class="text-[12px] lg:text-[16px] font-bold mb-6 lg:mb-8">
+    <h5 class="mb-6 lg:mb-8">
       <slot name="subtitle">xxx</slot>
-    </h3>
-    <h2 class="text-[27px] lg:text-[32px] font-bold mb-4 lg:mb-6">
+    </h5>
+    <h3 class="mb-4 lg:mb-6">
       <slot name="title">xxx</slot>
-    </h2>
-    <p class="grow text-[16px] font-bold mb-8">
+    </h3>
+    <p class="grow text-detail mb-8">
       <slot name="description">xxx</slot>
     </p>
     <MoreBtn class="self-center" bg-class="bg-black text-white" />

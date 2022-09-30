@@ -12,15 +12,13 @@
           process * 20
         }px);`"
       >
-        <h4 class="font-bold text-[16px] lg:text-[24px] lg:mb-8">
+        <h4 class="lg:mb-8">
           <slot name="subtitle"></slot>
         </h4>
-        <h3
-          class="font-bold text-[27px] lg:text-[36px] mb-2 lg:mb-20 lg:w-[463px]"
-        >
+        <h3 class="mb-2 lg:mb-20 lg:w-[463px]">
           <slot name="title"></slot>
         </h3>
-        <p class="text-[16px] lg:text-[24px] mb-2 lg:mb-32 lg:w-[463px]">
+        <p class="text-description mb-2 lg:mb-32 lg:w-[463px]">
           <slot name="description"></slot>
         </p>
         <div class="w-full">

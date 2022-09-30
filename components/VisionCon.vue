@@ -4,9 +4,7 @@
       class="pt-[20px] lg:pt-[40px] container mx-auto px-4 lg:px-0 text-white"
     >
       <VisionConTextDisplay class="pb-[40px] lg:pb-[80px]">
-        <span
-          class="text-[22px] lg:text-[24px] leading-[40px] lg:leading-[60px]"
-        >
+        <span class="text-description leading-[40px] lg:leading-[60px]">
           它使用由超过200个拉丁单词所构造的词典，<br />
           结合了几个模范句子结构，来生成看起来恰当的Lorem Ipsum。<br />
           因此，生成出的结果无一例外免于重复，刻意的幽默，以及非典型的词汇等等。<br />
@@ -47,15 +45,13 @@
     </div>
     <div class="container mx-auto">
       <div
-        class="future w-full h-full px-4 lg:px-0 lg:w-[845px] lg:h-[845px] mx-auto text-white text-center pt-[20px] lg:pt-[71px] pb-[60px] lg:pb-[40px]"
+        class="future w-full h-full px-4 lg:px-0 lg:w-[845px] lg:h-[845px] mx-auto text-white text-center pt-[20px] lg:pt-[71px] pb-[60px] lg:pb-[40px] mb-[100px] lg:mb-0"
       >
-        <h3 class="text-[24px] lg:text-[32px] font-bold">未来进化历程</h3>
-        <p class="text-[16px] lg:text-[16px] mb-[50px] lg:mb-[127px]">
+        <h4>未来进化历程</h4>
+        <h6 class="mb-[50px] lg:mb-[100px] font-normal">
           FUTURE HISTORY of EVOLUTION
-        </p>
-        <p
-          class="text-[16px] lg:text-[22px] lg:w-[600px] lg:mx-auto lg:mb-[98px] mb-[40px]"
-        >
+        </h6>
+        <p class="text-detail lg:w-[600px] lg:mx-auto lg:mb-[120px] mb-[60px]">
           文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述
         </p>
         <div class="w-full">

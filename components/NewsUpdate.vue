@@ -1,7 +1,7 @@
 <template>
   <main>
     <ul class="px-[16px] lg:px-0">
-      <h3 class="text-[22px] font-normal mb-[20px] lg:mb-[43px]">最新资讯</h3>
+      <h4 class="font-normal mb-[20px] lg:mb-[43px] text-black">最新资讯</h4>
       <li
         v-for="article of articles"
         :key="article.slug"
@@ -20,10 +20,12 @@
           </div>
           <NuxtLink :to="`news/update/${article.slug}`">
             <div>
-              <h3 class="text-[20px] font-bold underline mb-[4px] lg:mb-[10px]">
+              <h5 class="underline text-black mb-[4px] lg:mb-[10px]">
                 {{ article.title }}
-              </h3>
-              <p class="text-[18px]">{{ article.description }}</p>
+              </h5>
+              <p class="text-detail" style="color: black">
+                {{ article.description }}
+              </p>
             </div>
           </NuxtLink>
         </div>
