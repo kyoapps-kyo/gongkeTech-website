@@ -4,7 +4,7 @@
       <nuxt-link to="vision" class="w-full h-full block">公司愿景</nuxt-link>
     </li>
     <li>
-      <nuxt-link to="#" class="w-full h-full block">产品信息</nuxt-link>
+      <nuxt-link to="product" class="w-full h-full block">产品信息</nuxt-link>
     </li>
     <li>
       <nuxt-link to="#" class="w-full h-full block">技术支持</nuxt-link>
