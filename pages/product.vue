@@ -48,6 +48,15 @@
   </div>
 </template>
 
+<script>
+export default {
+  head() {
+    return {
+      title: '产品信息',
+    }
+  },
+}
+</script>
 <style scoped>
 .product-banner .banner {
   background: url(@/assets/images/product-card-bg.jpg) no-repeat center center/
