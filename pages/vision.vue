@@ -7,6 +7,7 @@
         Lorem Ipsum，也称乱数假文或者哑元文本
       </template>
     </OtherBanner>
+    <VisionCon />
   </div>
 </template>
 <script>

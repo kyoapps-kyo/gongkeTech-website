@@ -2279,6 +2279,15 @@
   optionalDependencies:
     prettier "^1.18.2 || ^2.0.0"
 
+"@vueuse/components@^9.3.0":
+  version "9.3.0"
+  resolved "https://registry.yarnpkg.com/@vueuse/components/-/components-9.3.0.tgz#7f2a8d5697130b84c287dd2f3a6ac012a8beed0a"
+  integrity sha512-16MKXd+kx60qhocbGHhoNGMzNUkyYSY7LTuY/qqdyQik0NnOY4Mw4Lq2CMByvV4ymcnaw5qHGl1LNB94qjgSBA==
+  dependencies:
+    "@vueuse/core" "9.3.0"
+    "@vueuse/shared" "9.3.0"
+    vue-demi "*"
+
 "@vueuse/core@9.3.0", "@vueuse/core@^9.3.0":
   version "9.3.0"
   resolved "https://registry.yarnpkg.com/@vueuse/core/-/core-9.3.0.tgz#74d855bd19cb5eadd2edb30c871918fac881e8b8"
