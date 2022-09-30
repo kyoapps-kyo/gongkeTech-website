@@ -1,7 +1,7 @@
 <template>
   <header
     ref="target"
-    class="header fixed top-0 h-[48px] lg:h-[58px] w-full bg-black bg-opacity-60 transition-opacity duration-1000"
+    class="header fixed top-0 h-[48px] lg:h-[58px] w-full bg-black bg-opacity-80 transition-opacity duration-1000"
     :class="isShow ? '' : 'opacity-0'"
   >
     <div

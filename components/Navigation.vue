@@ -23,7 +23,7 @@
     <transition name="menu">
       <div
         v-if="isShow"
-        class="mask h-screen w-screen bg-black bg-opacity-60 absolute top-[48px] left-0 flex flex-col items-center"
+        class="mask h-screen w-screen bg-black bg-opacity-80 absolute top-[48px] left-0 flex flex-col items-center"
       >
         <Slogan />
         <Menu
