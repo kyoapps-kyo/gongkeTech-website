@@ -20,13 +20,11 @@
           Ipsum从西元15世纪起就被作为此领域的标准文本使用。
         </div>
       </div>
-      <a
-        class="text-white block text-center cursor-pointer absolute top-[450px] right-1/2 mr-[-48px] lg:mr-0 lg:top-1/2 lg:mt-[-230px] lg:right-[260px] transition-all transform hover:scale-[1.2] hover:text-[#e5e5e5]"
+      <div
+        class="absolute top-[450px] right-1/2 mr-[-48px] lg:mr-0 lg:top-1/2 lg:mt-[-230px] lg:right-[260px]"
       >
-        <span class="iconfont text-[60px] lg:text-[160px]">&#xe606;</span>
-        <br />
-        <span class="text-[16px] lg:text-[22px]">观看完整介绍</span>
-      </a>
+        <PlayBtn />
+      </div>
       <LookDownIcon
         class="absolute bottom-[30%] text-white left-1/2 text-[40px] ml-[-20px] lg:text-[80px] lg:ml-[-40px]"
       />
@@ -36,6 +34,7 @@
 <script lang="ts" setup>
 import { ref, computed } from 'vue'
 import { useMouseInElement } from '@vueuse/core'
+import PlayBtn from './PlayBtn.vue'
 
 const target = ref(null)
 
