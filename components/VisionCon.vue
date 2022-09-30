@@ -43,7 +43,9 @@
         >
       </VisionConTextDisplay>
     </div>
-    <div class="container mx-auto">
+    <div
+      class="container mx-auto transition-all duration-500 opacity-60 translate-y-10 hover:opacity-100 hover:translate-y-0"
+    >
       <div
         class="future w-full h-full px-4 lg:px-0 lg:w-[845px] lg:h-[845px] mx-auto text-white text-center pt-[20px] lg:pt-[71px] pb-[60px] lg:pb-[40px] mb-[100px] lg:mb-0"
       >
