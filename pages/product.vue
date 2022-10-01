@@ -45,6 +45,25 @@
         </div>
       </div>
     </section>
+    <section class="step-list w-full py-20 relative">
+      <h3 class="text-black text-center mb-8">设定步骤</h3>
+      <div class="container mx-auto">
+        <StepListOption before-con="1">
+          step a
+          <template slot="content-video"></template>
+          <template slot="content-detail"
+            >描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</template
+          >
+        </StepListOption>
+        <StepListOption before-con="2">
+          step a
+          <template slot="content-video"></template>
+          <template slot="content-detail"
+            >描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</template
+          >
+        </StepListOption>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -61,5 +80,17 @@ export default {
 .product-banner .banner {
   background: url(@/assets/images/product-card-bg.jpg) no-repeat center center/
     cover;
+}
+.step-list::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -5rem;
+  z-index: -1;
+  background: #fff url(@/assets/images/step-list-bg.jpg) no-repeat center
+    center/ 100% 100vh;
+  background-attachment: fixed;
+  filter: brightness(140%) contrast(60%) saturate(70%);
 }
 </style>
