@@ -47,7 +47,7 @@
     </section>
     <section class="step-list w-full py-20 relative">
       <h3 class="text-black text-center mb-8">设定步骤</h3>
-      <div class="container mx-auto">
+      <div class="container mx-auto flex flex-col pb-20 gap-10">
         <StepListOption before-con="1">
           step a
           <template slot="content-video"></template>
@@ -56,7 +56,14 @@
           >
         </StepListOption>
         <StepListOption before-con="2">
-          step a
+          step b
+          <template slot="content-video"></template>
+          <template slot="content-detail"
+            >描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</template
+          >
+        </StepListOption>
+        <StepListOption before-con="3">
+          step c
           <template slot="content-video"></template>
           <template slot="content-detail"
             >描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</template

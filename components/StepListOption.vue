@@ -1,10 +1,10 @@
+<!-- 等待解决问题，下拉菜单video card无过渡效果，transition不能作用于内部元素，之后再解决 -->
 <template>
-  <div>
+  <div ref="target" class="w-min mx-auto">
     <div
-      ref="target"
       class="step-card w-[300px] lg:w-[1000px] h-[60px] lg:h-[80px] bg-white relative mx-auto"
       :data-content-before="beforeCon"
-      @click="isOpen = !isOpen"
+      @click.stop="isOpen = !isOpen"
     >
       <p
         class="pl-[50px] text-description leading-[60px] lg:leading-[80px]"
@@ -19,43 +19,50 @@
         &#xe6df;
       </span>
     </div>
-    <transition name="content">
+    <!-- <transition name="content"> -->
+    <div
+      v-on-click-outside="closeContent"
+      class="w-[300px] lg:w-[1020px] lg:px-[138px] px-4 bg-white relative lg:left-[-10px] box-border mx-auto transition-all transform duration-1000 pt-10"
+      :class="isOpen ? `h-[644px] opacity-100` : 'h-[0px] opacity-0'"
+    >
       <div
-        v-if="isOpen"
-        class="w-[300px] lg:w-[1020px] lg:px-[138px] px-4 bg-white relative lg:left-[-10px] box-border mx-auto"
+        class="bg-gray-200 w-full relative mb-6 lg:mb-10 transition-all duration-500"
+        :class="isOpen ? `h-[180px] lg:h-[300px]` : 'h-[0px] opacity-0'"
       >
-        <transition name="content">
-          <div
-            v-show="isOpen"
-            class="bg-gray-200 w-full relative mb-6 lg:mb-10 h-[180px] lg:h-[300px]"
-          >
-            <p
-              class="iconfont text-black text-[50px] hover:text-white hover:scale-[1.2] cursor-pointer transform transition-all duration-500 absolute top-1/2 left-1/2 mt-[-37.5px] ml-[-25px]"
-            >
-              &#xe624;
-            </p>
-            <slot name="content-video"></slot>
-          </div>
-        </transition>
-        <p class="text-detail pb-10" style="color: black">
-          <slot name="content-detail"></slot>
+        <p
+          class="iconfont text-black text-[50px] hover:text-white hover:scale-[1.2] cursor-pointer transform transition-all duration-500 absolute top-1/2 left-1/2 mt-[-37.5px] ml-[-25px]"
+        >
+          &#xe624;
         </p>
+        <slot name="content-video"></slot>
       </div>
-    </transition>
+      <p
+        :class="isOpen ? `` : 'h-[0px] opacity-0'"
+        class="text-detail pb-10"
+        style="color: black"
+      >
+        <slot name="content-detail"></slot>
+      </p>
+    </div>
+    <!-- </transition> -->
   </div>
 </template>
 
 <script lang="ts" setup>
-import { ref, computed } from 'vue'
-import { useMouseInElement, useMousePressed } from '@vueuse/core'
+import { ref } from 'vue'
+import { vOnClickOutside } from '@vueuse/components'
+import type { OnClickOutsideHandler } from '@vueuse/core'
 
 const target = ref<HTMLElement | null>(null)
-const { pressed } = useMousePressed()
-const { isOutside } = useMouseInElement(target)
 const isOpen = ref<Boolean>(false)
 defineProps({
   beforeCon: { type: String, default: '' },
 })
+
+const closeContent: OnClickOutsideHandler = (event) => {
+  console.log(isOpen.value)
+  isOpen.value = false
+}
 </script>
 
 <style scoped>
