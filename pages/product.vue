@@ -71,6 +71,29 @@
         </StepListOption>
       </div>
     </section>
+    <section class="merit bg-white w-screen">
+      <div class="container mx-auto px-4 lg:px-18 pt-16 lg:py-20">
+        <h3 class="text-black text-center mb-20">优点说明</h3>
+        <div
+          class="bg-gray-200 max-w-[1100px] mx-auto h-[180px] lg:h-[500px] relative mb-16 lg:mb-28"
+        >
+          <p
+            class="iconfont text-black text-[50px] hover:text-white hover:scale-[1.2] cursor-pointer transform transition-all duration-500 absolute top-1/2 left-1/2 mt-[-37.5px] ml-[-25px]"
+          >
+            &#xe624;
+          </p>
+        </div>
+        <p
+          class="text-description max-w-[947px] mx-auto mb-8 lg:mb-10"
+          style="color: black"
+        >
+          说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本
+        </p>
+        <p class="text-detail max-w-[947px] mx-auto" style="color: black">
+          说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本
+        </p>
+      </div>
+    </section>
   </div>
 </template>
 
