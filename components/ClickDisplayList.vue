@@ -13,7 +13,7 @@
         <slot></slot>
       </p>
       <span
-        class="iconfont absolute top-1/2 mt-[-20px] right-6 lg:right-8 leading-[40px] lg:leading-[40px] text-[40px] w-[40px] h-[40px] cursor-pointer transform transition-transform duration-500"
+        class="iconfont absolute top-1/2 mt-[-20px] right-2 lg:right-8 leading-[40px] lg:leading-[40px] text-[40px] w-[40px] h-[40px] cursor-pointer transform transition-transform duration-500"
         :class="isOpen ? 'rotate-45' : 'rotate-0'"
       >
         &#xe6df;
@@ -60,7 +60,6 @@ defineProps({
 })
 
 const closeContent: OnClickOutsideHandler = (event) => {
-  console.log(isOpen.value)
   isOpen.value = false
 }
 </script>

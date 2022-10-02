@@ -48,27 +48,27 @@
     <section class="step-list w-full py-20 relative">
       <h3 class="text-black text-center mb-8">设定步骤</h3>
       <div class="container mx-auto flex flex-col pb-20 gap-10">
-        <StepListOption before-con="1">
+        <ClickDisplayList before-con="1">
           step a
           <template slot="content-video"></template>
           <template slot="content-detail"
             >描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</template
           >
-        </StepListOption>
-        <StepListOption before-con="2">
+        </ClickDisplayList>
+        <ClickDisplayList before-con="2">
           step b
           <template slot="content-video"></template>
           <template slot="content-detail"
             >描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</template
           >
-        </StepListOption>
-        <StepListOption before-con="3">
+        </ClickDisplayList>
+        <ClickDisplayList before-con="3">
           step c
           <template slot="content-video"></template>
           <template slot="content-detail"
             >描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</template
           >
-        </StepListOption>
+        </ClickDisplayList>
       </div>
     </section>
     <section class="merit bg-white w-screen">
@@ -160,6 +160,66 @@
               文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本
             </span>
           </CoreTechDesignCon>
+        </div>
+      </div>
+    </section>
+    <section class="product-info py-20 lg:py-32">
+      <h3 class="text-center mb-8 lg:mb-14">机械情报</h3>
+      <div class="container mx-auto">
+        <div class="mx-auto max-w-[1200px] h-[415px] bg-[#d9d9d9]"></div>
+      </div>
+    </section>
+    <section class="question w-screen bg-[#d9d9d9] py-20 lg:py-32">
+      <div class="container mx-auto">
+        <h3 class="text-black text-center mb-8 lg:mb-14">常见问题</h3>
+        <div class="flex flex-col gap-8 lg:gap-12">
+          <ClickDisplayList before-con="Q">
+            questionquestion
+            <template slot="content-video"></template>
+            <template slot="content-detail"
+              >描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</template
+            >
+          </ClickDisplayList>
+          <ClickDisplayList before-con="Q">
+            questionquestion
+            <template slot="content-video"></template>
+            <template slot="content-detail"
+              >描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</template
+            >
+          </ClickDisplayList>
+        </div>
+      </div>
+    </section>
+    <section class="buy-consult w-screen bg-[#f7f7f7] py-20 lg:py-32">
+      <div class="container mx-auto px-6 lg:px-0">
+        <div class="flex flex-col lg:flex-row justify-evenly">
+          <div>
+            <h3 class="text-black mb-8 lg:mb-12">购买渠道</h3>
+          </div>
+          <div>
+            <h3 class="text-black mb-8 lg:mb-12">技术咨询</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product-footer w-screen py-12 px-6 lg:px-0 lg:py-32">
+      <div class="container mx-auto">
+        <div class="grid grid-rows-2 lg:grid-cols-2 lg:max-h-[320px]">
+          <div
+            class="mx-auto w-[224px] flex flex-col justify-center items-center gap-10"
+          >
+            <Logo class="transform scale-[1.3]" show-text="false"></Logo>
+            <Logo class="transform scale-[1.3]" show-logo="false"></Logo>
+          </div>
+          <div class="">
+            <h3 class="mb-8 lg:mb-12">我们是？</h3>
+            <p class="text-detail max-w-[738px] mb-10 lg:mb-14">
+              文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文文本文本文本文本文本文本文本
+            </p>
+            <div class="w-full">
+              <MoreBtn bg-class="text-black bg-white self-center mx-auto" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
