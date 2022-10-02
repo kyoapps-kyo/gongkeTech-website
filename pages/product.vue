@@ -94,6 +94,75 @@
         </p>
       </div>
     </section>
+    <section class="core-tech w-screen bg-[#f7f7f7]">
+      <div class="container mx-auto py-20">
+        <h3 class="text-black text-center">核心技术</h3>
+        <div class="core-tech-con">
+          <CoreTechDesignCon class="sticky top-0" bg-class="bg-[#f7f7f7]">
+            <template slot="img">
+              <nuxt-img
+                src="core-tech-bg1.jpg"
+                sizes="sm:300px xxl:600px"
+              ></nuxt-img>
+            </template>
+            <template slot="number">核心技术一</template>
+            <template slot="title">核心技术标题标题标题</template>
+            <span>
+              文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本
+            </span>
+          </CoreTechDesignCon>
+          <CoreTechDesignCon class="sticky top-0" bg-class="bg-[#f7f7f7]">
+            <template slot="img">
+              <nuxt-img
+                src="core-tech-bg2.jpg"
+                sizes="sm:300px xxl:600px"
+              ></nuxt-img>
+            </template>
+            <template slot="number">核心技术二</template>
+            <template slot="title">核心技术标题标题标题</template>
+            <span>
+              文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本
+            </span>
+          </CoreTechDesignCon>
+        </div>
+      </div>
+    </section>
+    <section class="core-design w-screen bg-[#D9D9D9]">
+      <div class="container mx-auto py-20">
+        <h3 class="text-black text-center mb-8 lg:mb-[44px]">设计理念</h3>
+        <p class="text-detail text-center" style="color: black">
+          文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+        </p>
+        <div class="core-tech-con">
+          <CoreTechDesignCon class="sticky top-0" bg-class="bg-[#D9D9D9]">
+            <template slot="img">
+              <nuxt-img
+                src="core-tech-bg1.jpg"
+                sizes="sm:300px xxl:600px"
+              ></nuxt-img>
+            </template>
+            <template slot="number">核心设计一</template>
+            <template slot="title">核心设计标题标题标题</template>
+            <span>
+              文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本
+            </span>
+          </CoreTechDesignCon>
+          <CoreTechDesignCon class="sticky top-0" bg-class="bg-[#D9D9D9]">
+            <template slot="img">
+              <nuxt-img
+                src="core-tech-bg2.jpg"
+                sizes="sm:300px xxl:600px"
+              ></nuxt-img>
+            </template>
+            <template slot="number">核心设计二</template>
+            <template slot="title">核心设计标题标题标题</template>
+            <span>
+              文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本
+            </span>
+          </CoreTechDesignCon>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
