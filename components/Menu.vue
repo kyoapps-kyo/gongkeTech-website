@@ -7,7 +7,7 @@
       <nuxt-link to="product" class="w-full h-full block">产品信息</nuxt-link>
     </li>
     <li>
-      <nuxt-link to="#" class="w-full h-full block">技术支持</nuxt-link>
+      <nuxt-link to="tech" class="w-full h-full block">技术支持</nuxt-link>
     </li>
     <li>
       <nuxt-link to="#" class="w-full h-full block">关于我们</nuxt-link>

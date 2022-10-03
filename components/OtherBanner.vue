@@ -62,4 +62,11 @@ const cardTransform = computed(() => {
   filter: saturate(30%);
   background-attachment: fixed;
 }
+.tech-banner {
+  background: #000 url('@/assets/images/tech-card-bg.jpg') no-repeat center
+    center / cover;
+  background-blend-mode: hard-light;
+  filter: saturate(30%);
+  background-attachment: fixed;
+}
 </style>
