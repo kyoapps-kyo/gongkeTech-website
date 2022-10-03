@@ -69,4 +69,9 @@ const cardTransform = computed(() => {
   filter: saturate(30%);
   background-attachment: fixed;
 }
+.about-banner {
+  background: #000 url('@/assets/images/about-bg.jpg') no-repeat center center /
+    cover;
+  background-attachment: fixed;
+}
 </style>
