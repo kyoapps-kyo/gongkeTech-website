@@ -63,6 +63,17 @@
         </div>
       </div>
     </section>
+    <section
+      class="hidden lg:block history w-screen bg-[#f7f7f7f7] py-10 lg:py-20"
+    >
+      <h3 class="text-center text-black mb-6 lg:mb-14">发展历程</h3>
+      <h5 class="text-center text-black mb-10 lg:mb-20">副标题</h5>
+      <div
+        class="container mx-auto px-6 lg:px-24 flex justify-center items-center"
+      >
+        <History />
+      </div>
+    </section>
   </div>
 </template>
 
