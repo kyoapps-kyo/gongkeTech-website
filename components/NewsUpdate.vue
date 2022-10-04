@@ -5,7 +5,7 @@
       <li
         v-for="article of articles"
         :key="article.slug"
-        class="mb-[34px] pb-[10px] border-b lg:h-[200px] lg:overflow-hidden"
+        class="mb-[34px] pb-[10px] border-b last:border-b-0 lg:h-[200px] lg:overflow-hidden"
       >
         <p
           class="text-[14px] lg:text-[16px] text-[#111] mb-[14px] lg:mb-[18px]"
@@ -36,6 +36,12 @@
 
 <script>
 export default {
+  props: {
+    limit: {
+      type: Number,
+      default: 5,
+    },
+  },
   data() {
     return {
       articles: [],
@@ -45,7 +51,7 @@ export default {
     this.articles = await this.$content('articles/update')
       .only(['title', 'description', 'slug', 'date', 'img'])
       .sortBy('date', 'desc')
-      .limit(5)
+      .limit(this.limit)
       .fetch()
   },
 }

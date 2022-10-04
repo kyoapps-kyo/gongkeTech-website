@@ -1,19 +1,19 @@
 <template>
   <ul>
     <li>
-      <nuxt-link to="vision" class="w-full h-full block">公司愿景</nuxt-link>
+      <nuxt-link to="/vision" class="w-full h-full block">公司愿景</nuxt-link>
     </li>
     <li>
-      <nuxt-link to="product" class="w-full h-full block">产品信息</nuxt-link>
+      <nuxt-link to="/product" class="w-full h-full block">产品信息</nuxt-link>
     </li>
     <li>
-      <nuxt-link to="tech" class="w-full h-full block">技术支持</nuxt-link>
+      <nuxt-link to="/tech" class="w-full h-full block">技术支持</nuxt-link>
     </li>
     <li>
-      <nuxt-link to="about" class="w-full h-full block">关于我们</nuxt-link>
+      <nuxt-link to="/about" class="w-full h-full block">关于我们</nuxt-link>
     </li>
     <li>
-      <nuxt-link to="#" class="w-full h-full block">新闻资讯</nuxt-link>
+      <nuxt-link to="/newspage" class="w-full h-full block">新闻资讯</nuxt-link>
     </li>
     <li>
       <nuxt-link to="#" class="w-full h-full block">联系我们</nuxt-link>
