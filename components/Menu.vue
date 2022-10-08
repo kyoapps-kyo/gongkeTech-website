@@ -16,7 +16,7 @@
       <nuxt-link to="/newspage" class="w-full h-full block">新闻资讯</nuxt-link>
     </li>
     <li>
-      <nuxt-link to="#" class="w-full h-full block">联系我们</nuxt-link>
+      <nuxt-link to="/contact" class="w-full h-full block">联系我们</nuxt-link>
     </li>
     <li><language-switch></language-switch></li>
   </ul>
