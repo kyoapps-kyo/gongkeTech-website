@@ -1,13 +1,37 @@
 {
-  "welcome": "你好",
   "pages": {
     "index": {
       "title": "首页",
-      "data": [
-        "1",
-        "2",
-        "3"
-      ]
+      "banner": {
+        "content": ""
+      },
+      "product": {
+        "info": "",
+        "name": "",
+        "description": "",
+        "detail": ""
+      },
+      "vision": {
+        "title": "",
+        "description": ""
+      },
+      "tech": {
+        "title": "",
+        "description": ""
+      },
+      "productInfo": [
+        {
+          "name": "",
+          "description": "",
+          "title": "",
+          "src": ""
+        }
+      ],
+      "news": {
+        "title": "",
+        "update": "",
+        "release": ""
+      }
     }
   }
 }
