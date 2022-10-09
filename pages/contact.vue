@@ -45,6 +45,39 @@
         <JobsList :ant="ant" />
       </div>
     </section>
+    <section class="contact-form">
+      <div class="bg-[#f7f7f7] py-8 lg:py-24">
+        <h4 class="text-black text-center">咨询和预定</h4>
+
+        <form action="#" method="post">
+          <div
+            class="px-6 lg:px-0 w-full lg:w-[662px] mx-auto flex flex-col items-center gap-y-4 lg:gap-y-8 pt-6 lg:pt-20"
+          >
+            <input
+              class="bg-[#f7f7f7] w-full h-[40px] border-2 rounded-xl pl-4 lg:pl-10 focus:bg-black text-white"
+              type="text"
+              placeholder="姓名"
+            />
+            <input
+              class="bg-[#f7f7f7] w-full h-[40px] border-2 rounded-xl pl-4 lg:pl-10 focus:bg-black text-white"
+              type="text"
+              placeholder="邮箱"
+            />
+            <input
+              class="bg-[#f7f7f7] w-full h-[40px] border-2 rounded-xl pl-4 lg:pl-10 focus:bg-black text-white"
+              type="text"
+              placeholder="手机号"
+            />
+            <input
+              class="bg-[#f7f7f7] w-full h-[40px] border-2 rounded-xl pl-4 lg:pl-10 focus:bg-black text-white"
+              type="text"
+              placeholder="咨询内容"
+            />
+            <MoreBtn bg-class="bg-black text-white">提交</MoreBtn>
+          </div>
+        </form>
+      </div>
+    </section>
   </div>
 </template>
 
