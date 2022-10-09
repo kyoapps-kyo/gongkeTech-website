@@ -45,6 +45,7 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    '@nuxtjs/i18n',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -80,5 +81,27 @@ export default {
       effect: 'sharpen:100',
       quality: 'auto:best',
     },
+  },
+  i18n: {
+    /* module options */
+    locales: [
+      { code: 'zh', iso: 'zh_CN', name: '中文', file: 'zh.json' },
+      { code: 'en', iso: 'en-US', name: 'English', file: 'en.json' },
+      { code: 'ja', iso: 'ja_JP', name: '日本語', file: 'ja.json' },
+    ],
+    defaultLocale: 'zh',
+    langDir: 'locales/',
+    vueI18n: {
+      fallbackLocale: 'zh',
+    },
+    vueI18nLoader: true,
+    alwaysRedirect: true,
+    redirectOn: 'root',
+    useCookie: true,
+    cookieAge: 365,
+    cookieCrossOrigin: false,
+    cookieDomain: null,
+    cookieKey: 'i18n_redirected',
+    cookieSecure: false,
   },
 }
