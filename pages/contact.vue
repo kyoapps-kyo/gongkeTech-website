@@ -19,16 +19,51 @@
         <div class="h-[272px] w-full lg:w-[540px] bg-white"></div>
       </div>
     </section>
-    <section class="jobs"></section>
+    <section class="jobs">
+      <div class="container mx-auto px-6 lg:px-24 py-4 lg:py-10">
+        <h3 class="mb-4 lg:mb-8">JOIN US</h3>
+        <ul
+          class="w-[246px] h-[24px] flex justify-between items-center mb-8 lg:mb-10"
+        >
+          <li
+            class="text-white text-[20px] cursor-pointer px-2 py-1 rounded-lg hover:border border-gray-300"
+            :class="ant == 0 ? 'text-white font-bold' : 'text-gray-300'"
+            @click="active(0)"
+          >
+            社会招聘
+          </li>
+          <li
+            class="text-white text-[20px] cursor-pointer px-2 py-1 rounded-lg hover:border border-gray-300"
+            :class="ant == 1 ? 'text-white font-bold' : 'text-gray-300'"
+            @click="active(1)"
+          >
+            校园招聘
+          </li>
+        </ul>
+      </div>
+      <div class="jobs-list">
+        <JobsList :ant="ant" />
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      ant: 0,
+    }
+  },
   head() {
     return {
       title: '联系我们',
     }
+  },
+  methods: {
+    active(num) {
+      this.ant = num
+    },
   },
 }
 </script>
