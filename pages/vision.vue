@@ -1,10 +1,10 @@
 <template>
   <div>
     <OtherBanner>
-      <template slot="subtitle"> 公司愿景 </template>
-      <template slot="title"> Lorem Ipsum从西元15世 </template>
+      <template slot="subtitle"> {{ $t('pages.vision.subtitle') }} </template>
+      <template slot="title"> {{ $t('pages.vision.title') }} </template>
       <template slot="description">
-        Lorem Ipsum，也称乱数假文或者哑元文本
+        {{ $t('pages.vision.description') }}
       </template>
     </OtherBanner>
     <VisionCon />

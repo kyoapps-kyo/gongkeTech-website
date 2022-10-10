@@ -32,6 +32,25 @@
         }
       ]
     },
+    "vision": {
+      "subtitle": "",
+      "title": "",
+      "description": "",
+      "visionContent": {
+        "description": [],
+        "details": [
+          {
+            "title": "",
+            "content": ""
+          }
+        ],
+        "future": {
+          "title": "",
+          "detail": "",
+          "link": ""
+        }
+      }
+    },
     "news": {
       "title": "",
       "update": "",
