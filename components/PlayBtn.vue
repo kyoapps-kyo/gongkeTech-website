@@ -4,6 +4,8 @@
   >
     <span class="iconfont text-[60px] lg:text-[160px]">&#xe606;</span>
     <br />
-    <span class="text-[16px] lg:text-[22px]">观看完整介绍</span>
+    <span class="text-[16px] lg:text-[22px]">{{
+      $t('other.btnPlayText')
+    }}</span>
   </a>
 </template>

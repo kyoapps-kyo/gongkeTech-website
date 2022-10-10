@@ -45,37 +45,17 @@
       </h4>
       <div id="product-display-zoom">
         <ProductInfo
+          v-for="(item, index) in $t('pages.index.productInfo')"
+          :key="item.name + index"
           class="sticky top-0 product-info"
-          link="product"
+          :link="item.link"
           :no-bg-color="false"
         >
-          <template slot="subtitle">系列名称</template>
-          <template slot="title">名称名称名称名称</template>
-          <template slot="description">
-            描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
-          </template>
+          <template slot="subtitle">{{ item.name }}</template>
+          <template slot="title">{{ item.title }}</template>
+          <template slot="description">{{ item.description }}</template>
           <template slot="product-img">
-            <nuxt-img src="product-img1.png" sizes="sm:390 xxl:506" />
-          </template>
-        </ProductInfo>
-        <ProductInfo class="sticky top-0 product-info" link="product">
-          <template slot="subtitle">系列名称</template>
-          <template slot="title">名称名称名称名称</template>
-          <template slot="description">
-            描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
-          </template>
-          <template slot="product-img">
-            <nuxt-img src="product-img2.png" sizes="sm:390 xxl:506" />
-          </template>
-        </ProductInfo>
-        <ProductInfo class="sticky top-0 product-info" link="product">
-          <template slot="subtitle">系列名称</template>
-          <template slot="title">名称名称名称名称</template>
-          <template slot="description">
-            描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
-          </template>
-          <template slot="product-img">
-            <nuxt-img src="product-img3.png" sizes="sm:390 xxl:506" />
+            <nuxt-img :src="item.src" sizes="sm:390 xxl:506" />
           </template>
         </ProductInfo>
         <div

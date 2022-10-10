@@ -3,39 +3,79 @@
     "index": {
       "title": "首页",
       "banner": {
-        "content": "",
+        "content": "Lorem Ipsum，也称乱数假文或者哑元文本， 是印刷及排版领域所常用的虚拟文字。由于曾经一台匿名的打印机刻意打乱了一盒印刷字体从而造出一本字体样品书，Lorem Ipsum从西元15世纪起就被作为此领域的标准文本使用。",
         "sloganSrc": "logo-slogan-w.png"
       },
       "product": {
-        "info": "",
-        "name": "",
-        "description": "",
-        "detail": ""
+        "info": "产品信息",
+        "name": "产品名称",
+        "description": "产品简述产品简述产品简述产品简述产品简述产品简述",
+        "detail": "描述详细描述详细描述详细描述详细描述详细描述详细描述详细描述详细描述详细描述详细描述详细描述详细描述详细描述详细描述详细描述详细描述详细描述详细描述详细描述详细描述"
       },
       "vision": {
-        "title": "",
-        "description": ""
+        "subtitle": "公司愿景",
+        "title": "标题标题标题标题",
+        "description": "述描述描述描述描述"
       },
       "tech": {
-        "title": "",
-        "description": ""
+        "subtitle": "技术支持",
+        "title": "标题标题标题标题",
+        "description": "述描述描述描述描述"
       },
       "productInfo": [
         {
-          "name": "",
-          "description": "",
-          "title": "",
-          "src": ""
+          "name": "系列名称",
+          "description": "名称名称名称名称",
+          "title": "描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述",
+          "src": "product-img1.png",
+          "link": "/product"
+        },
+        {
+          "name": "系列名称",
+          "description": "名称名称名称名称",
+          "title": "描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述",
+          "src": "product-img2.png",
+          "link": "/product"
+        },
+        {
+          "name": "系列名称",
+          "description": "名称名称名称名称",
+          "title": "描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述",
+          "src": "product-img3.png",
+          "link": "/product"
         }
-      ],
-      "news": {
-        "title": "",
-        "update": "",
-        "release": ""
-      }
+      ]
     },
-    "other": {
-      "btnText": ""
+    "news": {
+      "title": "新闻资讯",
+      "update": "最新资讯",
+      "release": "最新发表"
     }
+  },
+  "other": {
+    "btnText": "查看更多",
+    "btnPlayText": "观看完整介绍",
+    "logo": {
+      "logoSrc": "logo-w.png",
+      "sloganSrc": "logo-slogan-w.png"
+    }
+  },
+  "header": {
+    "menu": {
+      "vision": "公司愿景",
+      "product": "产品信息",
+      "tech": "技术支持",
+      "about": "关于我们",
+      "news": "新闻资讯",
+      "contact": "联系我们"
+    }
+  },
+  "footer": {
+    "address": "地址：地址地址地址地址地址地址地址地址地址地址地址地址地址",
+    "email": "dsfsdf@asa.com",
+    "wechat": "",
+    "app": "",
+    "video": "",
+    "copyright": ""
   }
 }

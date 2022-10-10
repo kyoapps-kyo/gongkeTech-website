@@ -1,34 +1,34 @@
 <template>
   <ul>
     <li>
-      <nuxt-link :to="localePath('/vision')" class="w-full h-full block"
-        >公司愿景</nuxt-link
+      <nuxt-link :to="localePath('/vision')" class="w-full h-full block">
+        {{ $t('header.menu.vision') }}
+      </nuxt-link>
+    </li>
+    <li>
+      <nuxt-link :to="localePath('/product')" class="w-full h-full block">
+        {{ $t('header.menu.product') }}</nuxt-link
       >
     </li>
     <li>
-      <nuxt-link :to="localePath('/product')" class="w-full h-full block"
-        >产品信息</nuxt-link
-      >
+      <nuxt-link :to="localePath('/tech')" class="w-full h-full block">{{
+        $t('header.menu.tech')
+      }}</nuxt-link>
     </li>
     <li>
-      <nuxt-link :to="localePath('/tech')" class="w-full h-full block"
-        >技术支持</nuxt-link
-      >
+      <nuxt-link :to="localePath('/about')" class="w-full h-full block">{{
+        $t('header.menu.about')
+      }}</nuxt-link>
     </li>
     <li>
-      <nuxt-link :to="localePath('/about')" class="w-full h-full block"
-        >关于我们</nuxt-link
-      >
+      <nuxt-link :to="localePath('/newspage')" class="w-full h-full block">{{
+        $t('header.menu.news')
+      }}</nuxt-link>
     </li>
     <li>
-      <nuxt-link :to="localePath('/newspage')" class="w-full h-full block"
-        >新闻资讯</nuxt-link
-      >
-    </li>
-    <li>
-      <nuxt-link :to="localePath('/contact')" class="w-full h-full block"
-        >联系我们</nuxt-link
-      >
+      <nuxt-link :to="localePath('/contact')" class="w-full h-full block">{{
+        $t('header.menu.contact')
+      }}</nuxt-link>
     </li>
     <li><language-switch></language-switch></li>
   </ul>

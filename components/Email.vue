@@ -1,3 +1,3 @@
 <template>
-  <h6 class="">dsfsdf@asa.com</h6>
+  <h6 class="">{{ $t('footer.email') }}</h6>
 </template>

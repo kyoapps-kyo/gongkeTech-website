@@ -13,10 +13,12 @@
         "detail": ""
       },
       "vision": {
+        "subtitle": "公司景",
         "title": "",
         "description": ""
       },
       "tech": {
+        "subtitle": "公司景",
         "title": "",
         "description": ""
       },
@@ -25,17 +27,41 @@
           "name": "",
           "description": "",
           "title": "",
-          "src": ""
+          "src": "",
+          "link": ""
         }
-      ],
-      "news": {
-        "title": "",
-        "update": "",
-        "release": ""
-      }
+      ]
     },
-    "other": {
-      "btnText": ""
+    "news": {
+      "title": "",
+      "update": "",
+      "release": ""
     }
+  },
+  "other": {
+    "btnText": "",
+    "btnPlayText": "观看完整介绍",
+    "logo": {
+      "logoSrc": "logo-w.png",
+      "sloganSrc": "logo-slogan-w.png"
+    }
+  },
+  "header": {
+    "menu": {
+      "vision": "",
+      "product": "",
+      "tech": "",
+      "about": "",
+      "news": "",
+      "contact": ""
+    }
+  },
+  "footer": {
+    "address": "",
+    "email": "",
+    "wechat": "",
+    "app": "",
+    "video": "",
+    "copyright": ""
   }
 }
