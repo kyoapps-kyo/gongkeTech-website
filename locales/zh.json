@@ -4,8 +4,7 @@
       "title": "首页",
       "banner": {
         "content": "",
-        "sloganSrc": "",
-        "bgSrc": ""
+        "sloganSrc": "logo-slogan-w.png"
       },
       "product": {
         "info": "",
@@ -34,6 +33,9 @@
         "update": "",
         "release": ""
       }
+    },
+    "other": {
+      "btnText": ""
     }
   }
 }

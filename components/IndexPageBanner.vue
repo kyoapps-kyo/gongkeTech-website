@@ -10,14 +10,15 @@
         }"
       >
         <div class="slogan mb-8 lg:mb-[82px]">
-          <nuxt-img src="logo-slogan-w.png" sizes="md:200px xxl:400px" />
+          <nuxt-img
+            :src="$t('pages.index.banner.sloganSrc')"
+            sizes="md:200px xxl:400px"
+          />
         </div>
         <div
           class="banner-description text-[18px] lg:text-[24px] text-white leading-loose"
         >
-          Lorem Ipsum，也称乱数假文或者哑元文本，
-          是印刷及排版领域所常用的虚拟文字。由于曾经一台匿名的打印机刻意打乱了一盒印刷字体从而造出一本字体样品书，Lorem
-          Ipsum从西元15世纪起就被作为此领域的标准文本使用。
+          {{ $t('pages.index.banner.content') }}
         </div>
       </div>
       <div
