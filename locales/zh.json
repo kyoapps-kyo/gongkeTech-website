@@ -3,7 +3,9 @@
     "index": {
       "title": "首页",
       "banner": {
-        "content": ""
+        "content": "",
+        "sloganSrc": "",
+        "bgSrc": ""
       },
       "product": {
         "info": "",
