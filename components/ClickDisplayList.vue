@@ -59,7 +59,7 @@ defineProps({
   beforeCon: { type: String, default: '' },
 })
 
-const closeContent: OnClickOutsideHandler = (event) => {
+const closeContent: OnClickOutsideHandler = () => {
   isOpen.value = false
 }
 </script>
