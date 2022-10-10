@@ -1,3 +1,41 @@
 {
-  "welcome": "hello"
+  "pages": {
+    "index": {
+      "title": "Home",
+      "banner": {
+        "content": "",
+        "sloganSrc": "logo-slogan-w.png"
+      },
+      "product": {
+        "info": "",
+        "name": "",
+        "description": "",
+        "detail": ""
+      },
+      "vision": {
+        "title": "",
+        "description": ""
+      },
+      "tech": {
+        "title": "",
+        "description": ""
+      },
+      "productInfo": [
+        {
+          "name": "",
+          "description": "",
+          "title": "",
+          "src": ""
+        }
+      ],
+      "news": {
+        "title": "",
+        "update": "",
+        "release": ""
+      }
+    },
+    "other": {
+      "btnText": ""
+    }
+  }
 }
