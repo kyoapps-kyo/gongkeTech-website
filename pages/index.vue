@@ -49,7 +49,7 @@
           :key="item.name + index"
           class="sticky top-0 product-info"
           :link="item.link"
-          :no-bg-color="false"
+          :no-bg-color="index == 0 ? false : true"
         >
           <template slot="subtitle">{{ item.name }}</template>
           <template slot="title">{{ item.title }}</template>
