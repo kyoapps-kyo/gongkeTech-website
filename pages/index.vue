@@ -84,7 +84,7 @@
       </div>
     </section>
     <section id="news">
-      <NewsLists link="news" />
+      <NewsLists link="news" color="text-black" />
     </section>
   </div>
 </template>
