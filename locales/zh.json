@@ -79,6 +79,180 @@
         }
       }
     },
+    "product": {
+      "name": "",
+      "description": "",
+      "bannerDescription": "",
+      "detail": "",
+      "useCase": {
+        "title": "",
+        "items": [
+          {
+            "title": "",
+            "link": ""
+          }
+        ],
+        "allLink": ""
+      },
+      "stepList": [
+        {
+          "no": "",
+          "title": "",
+          "videoSrc": "",
+          "detail": ""
+        }
+      ],
+      "merit": {
+        "title": "",
+        "videoSrc": "",
+        "description": "",
+        "detail": ""
+      },
+      "coreTech": {
+        "title": "",
+        "items": [
+          {
+            "subtitle": "",
+            "title": "",
+            "content": "",
+            "picSrc": ""
+          }
+        ]
+      },
+      "coreDesign": {
+        "title": "",
+        "description": "",
+        "items": [
+          {
+            "subtitle": "",
+            "title": "",
+            "content": "",
+            "picSrc": ""
+          }
+        ]
+      },
+      "productInfo": {
+        "title": "",
+        "picSrc": ""
+      },
+      "question": {
+        "title": "",
+        "items": [
+          {
+            "title": "",
+            "content": ","
+          }
+        ]
+      },
+      "buyConsult": [
+        {
+          "title": "",
+          "picSrc": ""
+        },
+        {
+          "title": "",
+          "picSrc": ""
+        }
+      ],
+      "footer": {
+        "title": "",
+        "content": ""
+      }
+    },
+    "tech": {
+      "subtitle": "",
+      "title": "",
+      "description": "",
+      "coreTech": {
+        "title": "",
+        "items": [
+          {
+            "title": "",
+            "content": ""
+          }
+        ]
+      },
+      "conclusion": {
+        "title": "",
+        "detail": "",
+        "videoSrc": ""
+      },
+      "tips": {
+        "title": "",
+        "items": [
+          {
+            "types": "",
+            "title": "",
+            "content": "",
+            "src": ""
+          }
+        ]
+      }
+    },
+    "about": {
+      "banner": {
+        "subtitle": "",
+        "title": "",
+        "description": ""
+      },
+      "teams": [
+        {
+          "name": "",
+          "avatar": "",
+          "work": ""
+        }
+      ],
+      "constructor": "",
+      "join": "",
+      "history": {
+        "title": "",
+        "subtitle": "",
+        "items": [
+          {
+            "data": "",
+            "title": ""
+          }
+        ]
+      }
+    },
+    "contact": {
+      "slogan": "",
+      "company": "",
+      "address": "",
+      "social": "",
+      "school": "",
+      "jobList": [
+        {
+          "title": "",
+          "social": [
+            ""
+          ],
+          "school": [
+            ""
+          ],
+          "jobs": [
+            {
+              "job": "",
+              "content": [
+                ""
+              ],
+              "require": [
+                ""
+              ],
+              "address": ""
+            }
+          ]
+        }
+      ],
+      "contact": {
+        "title": "",
+        "name": "",
+        "email": "",
+        "phone": "",
+        "content": "",
+        "submit": ""
+      }
+    },
     "news": {
       "title": "新闻资讯",
       "update": "最新资讯",
@@ -110,5 +284,32 @@
     "app": "",
     "video": "",
     "copyright": ""
+  },
+  "head": {
+    "index": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "vision": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "product": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "about": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "contact": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    }
   }
 }
