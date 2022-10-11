@@ -10,7 +10,10 @@
     <h4 class="text-black text-center">
       <slot name="name"></slot>
     </h4>
-    <p class="text-detail text-center" style="color: black">
+    <p
+      class="text-detail text-center w-[150px] lg:w-[200px]"
+      style="color: black"
+    >
       <slot></slot>
     </p>
   </div>

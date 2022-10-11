@@ -249,26 +249,82 @@
     },
     "about": {
       "banner": {
-        "subtitle": "",
-        "title": "",
-        "description": ""
+        "subtitle": "关于我们",
+        "title": "团队理念团队理念团队理念团队",
+        "description": "简述简述简述简述简述简述简述简述"
       },
-      "teams": [
-        {
-          "name": "",
-          "avatar": "",
-          "work": ""
-        }
-      ],
-      "constructor": "",
-      "join": "",
+      "teams": {
+        "title": "团队成员",
+        "items": [
+          {
+            "name": "姓名",
+            "avatar": "avatar.png",
+            "work": "职责职责职责职责职责职责职责"
+          },
+          {
+            "name": "姓名2",
+            "avatar": "avatar.png",
+            "work": "职责职责职责职责职责职责职责"
+          },
+          {
+            "name": "姓名3",
+            "avatar": "avatar.png",
+            "work": "职责职责职责职责职责职责职责"
+          },
+          {
+            "name": "姓名4",
+            "avatar": "avatar.png",
+            "work": "职责职责职责职责职责职责职责"
+          },
+          {
+            "name": "姓名5",
+            "avatar": "avatar.png",
+            "work": "职责职责职责职责职责职责职责"
+          },
+          {
+            "name": "姓名6",
+            "avatar": "avatar.png",
+            "work": "职责职责职责职责职责职责职责"
+          }
+        ]
+      },
+      "constructor": "构建理念构建理念构建理念构建理念构建理念构建理念构建理念构建理念构建理念构建理念构建理念构建理念构建理念",
+      "join": "加入我们",
       "history": {
         "title": "",
         "subtitle": "",
         "items": [
           {
-            "data": "",
-            "title": ""
+            "date": "2019-10-10",
+            "title": "create"
+          },
+          {
+            "date": "2020-10-10",
+            "title": "xxxxx"
+          },
+          {
+            "date": "2020-10-10",
+            "title": "xxxx"
+          },
+          {
+            "date": "2021-10-10",
+            "title": "xxxx"
+          },
+          {
+            "date": "2021-10-10",
+            "title": "xxxx"
+          },
+          {
+            "date": "2022-10-10",
+            "title": "xxxx"
+          },
+          {
+            "date": "2022-10-10",
+            "title": "xxxx"
+          },
+          {
+            "date": "2022-10-10",
+            "title": "xxxx"
           }
         ]
       }

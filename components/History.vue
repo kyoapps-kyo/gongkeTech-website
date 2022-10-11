@@ -19,7 +19,7 @@
     >
       <ul class="overflow-hidden h-[340px] w-max">
         <li
-          v-for="(item, index) in history"
+          v-for="(item, index) in $t('pages.about.history.items')"
           :key="item.index"
           class="h-[340px] w-[200px] relative"
         >
@@ -48,16 +48,7 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 import { useScroll } from '@vueuse/core'
-const history = ref<Object>([
-  { date: ' 2021-10-10', title: 'create' },
-  { date: ' 2022-1-21', title: 'xyz' },
-  { date: ' 2022-5-23', title: '123' },
-  { date: ' 2022-5-23', title: '123' },
-  { date: ' 2022-5-23', title: '123' },
-  { date: ' 2022-5-23', title: '123' },
-  { date: ' 2022-5-23', title: '123' },
-  { date: ' 2022-5-23', title: '123' },
-])
+
 const el = ref<HTMLElement | null>(null)
 const { x, arrivedState } = useScroll(el, {
   behavior: 'smooth',
