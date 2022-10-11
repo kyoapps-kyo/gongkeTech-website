@@ -1,7 +1,9 @@
 <template>
   <main>
     <ul class="px-[16px] lg:px-0">
-      <h4 class="font-normal mb-[20px] lg:mb-[43px] text-black">最新发表</h4>
+      <h4 class="font-normal mb-[20px] lg:mb-[43px] text-black">
+        {{ $t('pages.news.release') }}
+      </h4>
       <li
         v-for="article of articles"
         :key="article.slug"

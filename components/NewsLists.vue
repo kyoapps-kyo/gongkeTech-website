@@ -7,7 +7,7 @@
         class="text-[24px] font-bold text-center mb-[40px] lg:mb-[83px]"
         :class="color"
       >
-        新闻资讯
+        {{ $t('pages.news.title') }}
       </h2>
       <div class="lg:grid lg:grid-cols-2 lg:gap-x-[115px]">
         <NewsUpdate :limit="limit" />
