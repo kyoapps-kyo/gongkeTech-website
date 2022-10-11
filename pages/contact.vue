@@ -3,7 +3,9 @@
     <div
       class="contact-banner h-[490px] w-screen flex flex-col justify-center items-center"
     >
-      <h2 class="drop-shadow-[1px_1px_2px_#000]">加入我们，共创未来</h2>
+      <h2 class="drop-shadow-[1px_1px_2px_#000]">
+        {{ $t('pages.contact.slogan') }}
+      </h2>
     </div>
     <section class="access">
       <div
@@ -11,9 +13,9 @@
       >
         <div class="pr-0 lg:pr-16">
           <h3 class="mb-4 lg:mb-8">ACCESS</h3>
-          <h4 class="mb-6 lg:mb-10">攻壳智动</h4>
+          <h4 class="mb-6 lg:mb-10">{{ $t('pages.contact.company') }}</h4>
           <p class="text-detail mb-6 lg:mb-0" style="color: white">
-            地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址
+            {{ $t('pages.contact.address') }}
           </p>
         </div>
         <div class="h-[272px] w-full lg:w-[540px] bg-white"></div>
@@ -30,14 +32,14 @@
             :class="ant == 0 ? 'text-white font-bold' : 'text-gray-300'"
             @click="active(0)"
           >
-            社会招聘
+            {{ $t('pages.contact.social') }}
           </li>
           <li
             class="text-white text-[20px] cursor-pointer px-2 py-1 rounded-lg hover:border border-gray-300"
             :class="ant == 1 ? 'text-white font-bold' : 'text-gray-300'"
             @click="active(1)"
           >
-            校园招聘
+            {{ $t('pages.contact.school') }}
           </li>
         </ul>
       </div>
@@ -47,7 +49,9 @@
     </section>
     <section class="contact-form">
       <div class="bg-[#f7f7f7] py-8 lg:py-24">
-        <h4 class="text-black text-center">咨询和预定</h4>
+        <h4 class="text-black text-center">
+          {{ $t('pages.contact.contact.title') }}
+        </h4>
 
         <form action="#" method="post">
           <div
@@ -56,24 +60,26 @@
             <input
               class="bg-[#f7f7f7] w-full h-[40px] border-2 rounded-xl pl-4 lg:pl-10 focus:bg-black text-white"
               type="text"
-              placeholder="姓名"
+              :placeholder="$t('pages.contact.contact.name')"
             />
             <input
               class="bg-[#f7f7f7] w-full h-[40px] border-2 rounded-xl pl-4 lg:pl-10 focus:bg-black text-white"
               type="text"
-              placeholder="邮箱"
+              :placeholder="$t('pages.contact.contact.email')"
             />
             <input
               class="bg-[#f7f7f7] w-full h-[40px] border-2 rounded-xl pl-4 lg:pl-10 focus:bg-black text-white"
               type="text"
-              placeholder="手机号"
+              :placeholder="$t('pages.contact.contact.phone')"
             />
             <input
               class="bg-[#f7f7f7] w-full h-[40px] border-2 rounded-xl pl-4 lg:pl-10 focus:bg-black text-white"
               type="text"
-              placeholder="咨询内容"
+              :placeholder="$t('pages.contact.contact.content')"
             />
-            <MoreBtn bg-class="bg-black text-white">提交</MoreBtn>
+            <MoreBtn bg-class="bg-black text-white">{{
+              $t('pages.contact.contact.submit')
+            }}</MoreBtn>
           </div>
         </form>
       </div>
