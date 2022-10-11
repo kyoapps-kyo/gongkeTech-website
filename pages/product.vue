@@ -5,9 +5,11 @@
         class="container mx-auto text-center pt-[50px] lg:pt-[90px] pb-[20px] lg:pb-[34px]"
       >
         <div class="px-4 lg:px-0">
-          <h2 class="text-black mb-[10px] lg:mb-[25px]">产品名称</h2>
+          <h2 class="text-black mb-[10px] lg:mb-[25px]">
+            {{ $t('pages.product.name') }}
+          </h2>
           <p class="text-detail lg:mb-[70px] mb-[30px]" style="color: black">
-            产品说明产品说明产品说明产品说明产品说明产品说明产
+            {{ $t('pages.product.description') }}
           </p>
         </div>
         <div
@@ -17,7 +19,7 @@
             class="text-description leading-[40px] lg:leading-[60px] w-full lg:w-[655px] lg:text-left font-bold"
             style="color: black; text-shadow: 1px 1px 2px white"
           >
-            介绍介绍介绍介绍介绍绍介绍介绍介绍介绍绍介绍介绍介绍介绍绍介绍介绍介绍介绍绍介绍介绍介绍介绍
+            {{ $t('pages.product.bannerDescription') }}
           </p>
           <PlayBtn />
         </div>
@@ -25,7 +27,7 @@
           class="text-description lg:w-[890px] mx-auto px-4 lg:px-0"
           style="color: black"
         >
-          介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介
+          {{ $t('pages.product.detail') }}
         </p>
       </div>
     </section>
@@ -34,46 +36,46 @@
     >
       <div class="container mx-auto text-center">
         <h5 class="text-[#aaa] mb-[18px] lg:mb-[21px]">USE CASE</h5>
-        <h3 class="text-black mb-[34px] lg:mb-[44px]">产品使用案例</h3>
+        <h3 class="text-black mb-[34px] lg:mb-[44px]">
+          {{ $t('pages.product.useCase.title') }}
+        </h3>
         <div class="lg:flex justify-around items-center mb-[50px] lg:mb-[62px]">
-          <UseCaseCard />
-          <UseCaseCard />
-          <UseCaseCard />
+          <UseCaseCard
+            v-for="(item, index) in $t('pages.product.useCase.items')"
+            :key="item + index"
+            :link="item.link"
+            >{{ item.title }}</UseCaseCard
+          >
         </div>
         <div class="w-full">
-          <MoreBtn bg-class="bg-black text-white mx-auto" />
+          <MoreBtn
+            bg-class="bg-black text-white mx-auto"
+            :link="$t('pages.product.useCase.allLink')"
+          />
         </div>
       </div>
     </section>
     <section class="step-list w-full py-20 relative">
-      <h3 class="text-black text-center mb-8">设定步骤</h3>
+      <h3 class="text-black text-center mb-8">
+        {{ $t('pages.product.stepList.title') }}
+      </h3>
       <div class="container mx-auto flex flex-col pb-20 gap-10">
-        <ClickDisplayList before-con="1">
-          step a
-          <template slot="content-video"></template>
-          <template slot="content-detail"
-            >描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</template
-          >
-        </ClickDisplayList>
-        <ClickDisplayList before-con="2">
-          step b
-          <template slot="content-video"></template>
-          <template slot="content-detail"
-            >描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</template
-          >
-        </ClickDisplayList>
-        <ClickDisplayList before-con="3">
-          step c
-          <template slot="content-video"></template>
-          <template slot="content-detail"
-            >描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</template
-          >
+        <ClickDisplayList
+          v-for="(item, index) in $t('pages.product.stepList.items')"
+          :key="item.no + index"
+          :before-con="item.no"
+        >
+          {{ item.title }}
+          <template slot="content-video">{{ item.videoSrc }}</template>
+          <template slot="content-detail">{{ item.detail }}</template>
         </ClickDisplayList>
       </div>
     </section>
     <section class="merit bg-white w-screen">
       <div class="container mx-auto px-4 lg:px-18 pt-16 lg:py-20">
-        <h3 class="text-black text-center mb-20">优点说明</h3>
+        <h3 class="text-black text-center mb-20">
+          {{ $t('pages.product.merit.title') }}
+        </h3>
         <div
           class="bg-gray-200 max-w-[1100px] mx-auto h-[180px] lg:h-[500px] relative mb-16 lg:mb-28"
         >
@@ -87,41 +89,35 @@
           class="text-description max-w-[947px] mx-auto mb-8 lg:mb-10"
           style="color: black"
         >
-          说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本
+          {{ $t('pages.product.merit.description') }}
         </p>
         <p class="text-detail max-w-[947px] mx-auto" style="color: black">
-          说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本说明文本
+          {{ $t('pages.product.merit.detail') }}
         </p>
       </div>
     </section>
     <section class="core-tech w-screen bg-[#f7f7f7]">
       <div class="container mx-auto py-20">
-        <h3 class="text-black text-center">核心技术</h3>
+        <h3 class="text-black text-center">
+          {{ $t('pages.product.coreTech.title') }}
+        </h3>
         <div class="core-tech-con">
-          <CoreTechDesignCon class="sticky top-0" bg-class="bg-[#f7f7f7]">
+          <CoreTechDesignCon
+            v-for="(item, index) in $t('pages.product.coreTech.items')"
+            :key="item.subtitle + index"
+            class="sticky top-0"
+            bg-class="bg-[#f7f7f7]"
+          >
             <template slot="img">
               <nuxt-img
-                src="core-tech-bg1.jpg"
+                :src="item.picSrc"
                 sizes="sm:300px xxl:600px"
               ></nuxt-img>
             </template>
-            <template slot="number">核心技术一</template>
-            <template slot="title">核心技术标题标题标题</template>
+            <template slot="number">{{ item.subtitle }}</template>
+            <template slot="title">{{ item.title }}</template>
             <span>
-              文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本
-            </span>
-          </CoreTechDesignCon>
-          <CoreTechDesignCon class="sticky top-0" bg-class="bg-[#f7f7f7]">
-            <template slot="img">
-              <nuxt-img
-                src="core-tech-bg2.jpg"
-                sizes="sm:300px xxl:600px"
-              ></nuxt-img>
-            </template>
-            <template slot="number">核心技术二</template>
-            <template slot="title">核心技术标题标题标题</template>
-            <span>
-              文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本
+              {{ item.content }}
             </span>
           </CoreTechDesignCon>
         </div>
@@ -129,63 +125,56 @@
     </section>
     <section class="core-design w-screen bg-[#D9D9D9]">
       <div class="container mx-auto py-20">
-        <h3 class="text-black text-center mb-8 lg:mb-[44px]">设计理念</h3>
+        <h3 class="text-black text-center mb-8 lg:mb-[44px]">
+          {{ $t('pages.product.coreDesign.title') }}
+        </h3>
         <p class="text-detail text-center" style="color: black">
-          文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+          {{ $t('pages.product.coreDesign.description') }}
         </p>
         <div class="core-tech-con">
-          <CoreTechDesignCon class="sticky top-0" bg-class="bg-[#D9D9D9]">
+          <CoreTechDesignCon
+            v-for="(item, index) in $t('pages.product.coreDesign.items')"
+            :key="item.subtitle + index"
+            class="sticky top-0"
+            bg-class="bg-[#D9D9D9]"
+          >
             <template slot="img">
               <nuxt-img
-                src="core-tech-bg1.jpg"
+                :src="item.picSrc"
                 sizes="sm:300px xxl:600px"
               ></nuxt-img>
             </template>
-            <template slot="number">核心设计一</template>
-            <template slot="title">核心设计标题标题标题</template>
+            <template slot="number">{{ item.subtitle }}</template>
+            <template slot="title">{{ item.title }}</template>
             <span>
-              文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本
-            </span>
-          </CoreTechDesignCon>
-          <CoreTechDesignCon class="sticky top-0" bg-class="bg-[#D9D9D9]">
-            <template slot="img">
-              <nuxt-img
-                src="core-tech-bg2.jpg"
-                sizes="sm:300px xxl:600px"
-              ></nuxt-img>
-            </template>
-            <template slot="number">核心设计二</template>
-            <template slot="title">核心设计标题标题标题</template>
-            <span>
-              文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本
+              {{ item.content }}
             </span>
           </CoreTechDesignCon>
         </div>
       </div>
     </section>
     <section class="product-info py-20 lg:py-32">
-      <h3 class="text-center mb-8 lg:mb-14">机械情报</h3>
+      <h3 class="text-center mb-8 lg:mb-14">
+        {{ $t('pages.product.productInfo.title') }}
+      </h3>
       <div class="container mx-auto">
         <div class="mx-auto max-w-[1200px] h-[415px] bg-[#d9d9d9]"></div>
       </div>
     </section>
     <section class="question w-screen bg-[#d9d9d9] py-20 lg:py-32">
       <div class="container mx-auto">
-        <h3 class="text-black text-center mb-8 lg:mb-14">常见问题</h3>
+        <h3 class="text-black text-center mb-8 lg:mb-14">
+          {{ $t('pages.product.question.title') }}
+        </h3>
         <div class="flex flex-col gap-8 lg:gap-12">
-          <ClickDisplayList before-con="Q">
-            questionquestion
-            <template slot="content-video"></template>
-            <template slot="content-detail"
-              >描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</template
-            >
-          </ClickDisplayList>
-          <ClickDisplayList before-con="Q">
-            questionquestion
-            <template slot="content-video"></template>
-            <template slot="content-detail"
-              >描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</template
-            >
+          <ClickDisplayList
+            v-for="(item, index) in $t('pages.product.question.items')"
+            :key="item.no + index"
+            before-con="Q"
+          >
+            {{ item.title }}
+            <template slot="content-video">{{ item.videoSrc }}</template>
+            <template slot="content-detail">{{ item.content }}</template>
           </ClickDisplayList>
         </div>
       </div>
@@ -193,11 +182,13 @@
     <section class="buy-consult w-screen bg-[#f7f7f7] py-20 lg:py-32">
       <div class="container mx-auto px-6 lg:px-0">
         <div class="flex flex-col lg:flex-row justify-evenly">
-          <div>
-            <h3 class="text-black mb-8 lg:mb-12">购买渠道</h3>
-          </div>
-          <div>
-            <h3 class="text-black mb-8 lg:mb-12">技术咨询</h3>
+          <div
+            v-for="(item, index) in $t('pages.product.buyConsult')"
+            :key="item.title + index"
+          >
+            <h3 class="text-black mb-8 lg:mb-12">
+              {{ item.title }}
+            </h3>
           </div>
         </div>
       </div>
@@ -212,12 +203,17 @@
             <Logo class="transform scale-[1.3]" show-logo="false"></Logo>
           </div>
           <div class="">
-            <h3 class="mb-8 lg:mb-12">我们是？</h3>
+            <h3 class="mb-8 lg:mb-12">
+              {{ $t('pages.product.footer.title') }}
+            </h3>
             <p class="text-detail max-w-[738px] mb-10 lg:mb-14">
-              文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文文本文本文本文本文本文本文本
+              {{ $t('pages.product.footer.content') }}
             </p>
             <div class="w-full">
-              <MoreBtn bg-class="text-black bg-white self-center mx-auto" />
+              <MoreBtn
+                bg-class="text-black bg-white self-center mx-auto"
+                link="/about"
+              />
             </div>
           </div>
         </div>

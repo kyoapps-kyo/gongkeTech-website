@@ -66,14 +66,17 @@
         ],
         "allLink": ""
       },
-      "stepList": [
-        {
-          "no": "",
-          "title": "",
-          "videoSrc": "",
-          "detail": ""
-        }
-      ],
+      "stepList": {
+        "title": "",
+        "items": [
+          {
+            "no": "",
+            "title": "",
+            "videoSrc": "",
+            "detail": ""
+          }
+        ]
+      },
       "merit": {
         "title": "",
         "videoSrc": "",
@@ -112,7 +115,8 @@
         "items": [
           {
             "title": "",
-            "content": ","
+            "content": ",",
+            "videoSrc": ""
           }
         ]
       },

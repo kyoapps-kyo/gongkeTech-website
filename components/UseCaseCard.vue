@@ -4,7 +4,9 @@
       <div
         class="content h-full w-full flex justify-center items-center hover:scale-105 hover:opacity-90 transform transition-all duration-1000 cursor-pointer"
       >
-        <p class="text-description text-center w-[290px]">标题标题标题</p>
+        <p class="text-description text-center w-[290px]">
+          <slot></slot>
+        </p>
       </div>
     </div>
   </div>
