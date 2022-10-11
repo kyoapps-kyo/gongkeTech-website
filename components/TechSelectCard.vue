@@ -19,7 +19,14 @@
         <h4 class="text-black mb-6 lg:mb-20">
           {{ $t('pages.tech.tips.selectList')[selectIndex] }}
         </h4>
-        <div class="max-w-[600px] h-[400px] bg-black mb-6 lg:mb-20"></div>
+        <nuxt-img
+          :src="
+            displayData.src == null || displayData.src == ''
+              ? 'core-tech-bg1.jpg'
+              : displayData.src
+          "
+          sizes="xs:300 xxl:600"
+        />
         <h5 class="text-black mb-6 lg:mb-14">
           {{ displayData.title }}
         </h5>
@@ -36,7 +43,7 @@ import { ref, onMounted } from 'vue'
 
 const data = ref<Object | null>(null)
 
-const displayData = ref<Object>({ title: '', content: '' })
+const displayData = ref<Object>({ type: '', title: '', content: '', src: '' })
 const selectIndex = ref<Number>(0)
 
 const getData = (index: Number) => {
