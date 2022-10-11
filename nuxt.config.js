@@ -103,5 +103,6 @@ export default {
     cookieDomain: null,
     cookieKey: 'i18n_redirected',
     cookieSecure: false,
+    legacy: false,
   },
 }
